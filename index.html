@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Aayush Kumar — z/OS System Programmer</title>
+<title>Aayush Kumar — Full-Stack &amp; AI Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -214,6 +214,10 @@ section{padding:50px 0;position:relative}
 @media(max-width:760px){.duo{grid-template-columns:1fr}}
 
 /* ============ PROJECTS ============ */
+.proj-note{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--text-dim);
+  background:var(--surface);border:1px dashed var(--border-2);border-radius:11px;
+  padding:13px 17px;margin-bottom:20px}
+.proj-note .mk{color:var(--accent)}
 .proj-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 @media(max-width:760px){.proj-grid{grid-template-columns:1fr}}
 .proj{
@@ -228,6 +232,9 @@ section{padding:50px 0;position:relative}
 .proj-icon image-slot{width:54px;height:54px}
 .proj-artha{background:linear-gradient(140deg,#1f8a5b,#0f5f3c)}
 .proj-settl{background:linear-gradient(140deg,#6d5df0,#4733c2)}
+.proj-mosaic{background:linear-gradient(140deg,#d9a441,#a3702a)}
+.proj-mcp{background:linear-gradient(140deg,#2b6cb0,#1a4a80)}
+.proj-qs{background:linear-gradient(140deg,#31363f,#15181d)}
 .proj h3{font-size:20px;font-weight:700;letter-spacing:-.01em}
 .proj .tagline{font-size:13px;color:var(--accent);font-family:"JetBrains Mono",monospace;margin-top:2px}
 .proj p{font-size:15px;color:var(--text-dim);margin-bottom:16px;text-wrap:pretty}
@@ -237,39 +244,6 @@ section{padding:50px 0;position:relative}
 .proj-link{display:inline-flex;align-items:center;gap:7px;font-family:"JetBrains Mono",monospace;
   font-size:13px;color:var(--text-dim);transition:.18s}
 .proj-link:hover{color:var(--accent)}
-
-/* ---- per-app tech stack ---- */
-.proj-block{background:var(--surface);border:1px solid var(--border);border-radius:18px;
-  padding:26px 26px 24px;margin-bottom:20px;transition:.25s}
-.proj-block:hover{border-color:var(--border-2);box-shadow:var(--shadow)}
-.pb-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:22px;flex-wrap:wrap}
-.pb-head .proj-icon{width:58px;height:58px}
-.pb-head .proj-icon image-slot{width:58px;height:58px}
-.pb-titles{flex:1;min-width:220px}
-.pb-titles h3{font-size:23px;font-weight:700;letter-spacing:-.01em}
-.pb-titles .tagline{font-size:13px;color:var(--accent);font-family:"JetBrains Mono",monospace;margin-top:1px}
-.pb-titles p{font-size:15px;color:var(--text-dim);margin-top:9px;max-width:560px;text-wrap:pretty}
-.pb-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:13px}
-.stack-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px 22px;
-  border-top:1px solid var(--border);padding-top:22px}
-.stack-cat h4{font-family:"JetBrains Mono",monospace;font-size:11.5px;color:var(--accent);
-  letter-spacing:.05em;margin-bottom:12px;display:flex;align-items:center;gap:7px}
-.stack-cat h4::before{content:"";width:6px;height:6px;border-radius:2px;background:var(--accent);flex:0 0 auto}
-.stack-cat .chips{padding:0;gap:7px}
-.stack-cat .chip{padding:6px 11px;font-size:12.5px;background:var(--surface-2)}
-.tbadge{width:19px;height:19px;border-radius:5px;display:grid;place-items:center;color:#fff;
-  font-family:"JetBrains Mono",monospace;font-weight:700;font-size:10.5px;flex:0 0 auto;line-height:1}
-
-/* ---- skills subsection divider ---- */
-.stack-sub{display:flex;align-items:center;gap:12px;margin:38px 0 18px}
-.stack-sub:first-of-type{margin-top:0}
-.stack-sub .dot-sq{width:11px;height:11px;border-radius:3px;flex:0 0 auto}
-.stack-sub h3{font-size:18px;font-weight:600;letter-spacing:-.01em;white-space:nowrap}
-.stack-sub h3 small{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--text-faint);font-weight:400;margin-left:6px}
-.stack-sub .ln{flex:1;height:1px;background:var(--border);min-width:20px}
-.sub-mf{background:var(--accent)}
-.sub-artha{background:#1f8a5b}
-.sub-settl{background:#6d5df0}
 
 /* ============ CERTIFICATIONS ============ */
 .certs{display:flex;flex-wrap:wrap;gap:10px}
@@ -384,20 +358,20 @@ section{padding:50px 0;position:relative}
     <span class="kicker mono"><span class="blink"></span>$ whoami</span>
     <h1>Aayush <span class="accent">Kumar</span></h1>
     <div class="role mono"><span id="typed"></span><span class="cursor">▋</span></div>
-    <p class="lede">I keep <strong>enterprise mainframes</strong> fast, observable, and resilient. IBM z/OS System Programmer with <strong>8+ years</strong> supporting mission-critical IMS DB/DC environments across <strong>banking and insurance</strong> — and a builder of mobile apps on the side.</p>
+    <p class="lede">I build <strong>AI-powered applications end to end</strong> — React Native frontends, Python &amp; Node.js backends, and <strong>MCP servers</strong> that connect LLM agents to real systems. Backed by <strong>8+ years</strong> of enterprise engineering on mission-critical infrastructure across <strong>banking and insurance</strong>.</p>
     <div class="meta-row">
       <span><span class="ic">⌖</span> Bangalore, India</span>
-      <span><span class="ic">⏃</span> IBM · z/OS &amp; IMS</span>
-      <span><span class="ic">✉</span> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="c6a7a7bfb3b5aeadb3aba7b4f6f1fff386afa5aaa9b3a2e8a5a9ab">[email&#160;protected]</a></span>
+      <span><span class="ic">⏃</span> Full-Stack · AI · Enterprise</span>
+      <span><span class="ic">✉</span> <a href="mailto:aayushkumar0795@icloud.com">aayushkumar0795@icloud.com</a></span>
     </div>
     <div class="cta">
-      <a href="#experience" class="btn btn-primary">./view-experience</a>
+      <a href="#projects" class="btn btn-primary">./view-projects</a>
       <button class="btn btn-ghost" id="open-contact">get in touch →</button>
     </div>
     <div class="stats">
-      <div class="stat"><div class="n"><b>8</b>+</div><div class="l">years on z/OS</div></div>
-      <div class="stat"><div class="n"><b>3</b></div><div class="l">global enterprises</div></div>
-      <div class="stat"><div class="n"><b>2</b></div><div class="l">apps shipped</div></div>
+      <div class="stat"><div class="n"><b>8</b>+</div><div class="l">years engineering</div></div>
+      <div class="stat"><div class="n"><b>4</b></div><div class="l">apps built &amp; shipped</div></div>
+      <div class="stat"><div class="n"><b>2</b></div><div class="l">MCP servers</div></div>
       <div class="stat"><div class="n"><b>8</b></div><div class="l">certifications</div></div>
     </div>
     </div>
@@ -418,9 +392,9 @@ section{padding:50px 0;position:relative}
     <div class="paper-wrap rv">
       <span class="tab">ABOUT</span>
       <div class="paper">
-        <p>I'm an <span class="hl hl-g">IBM z/OS System Programmer</span> with <span class="hl hl-y">8+ years</span> supporting enterprise <span class="hl hl-b">IMS DB/DC environments</span> across the banking and insurance domains. My work centers on subsystem configuration, SMP/E maintenance, performance certification, and <span class="hl hl-p">observability enablement</span> — including OpenTelemetry and IBM Z Digital Integration Hub initiatives.</p>
-        <p>I've resolved <span class="hl hl-y">high-severity performance bottlenecks</span> for one of Spain's largest banks, led modernization efforts, and engineered automation inside highly regulated financial environments. I care deeply about <span class="hl hl-g">high availability, change discipline, and infrastructure resilience</span>.</p>
-        <p>Away from the mainframe, I build mobile products — <span class="hl hl-b">Artha</span> and <span class="hl hl-p">Settl</span> — because I like shipping things people actually use.</p>
+        <p>I'm a <span class="hl hl-g">full-stack engineer</span> who ships <span class="hl hl-b">AI-powered products</span> end to end — from <span class="hl hl-y">React Native &amp; TypeScript</span> frontends to Python and Node.js services on <span class="hl hl-p">Supabase/PostgreSQL</span>, with LLM features built on the Claude API.</p>
+        <p>I've designed <span class="hl hl-y">MCP servers</span> that bridge AI agents to mainframe subsystems, and built <span class="hl hl-b">QuantumShield</span>, an AI agent for post-quantum cryptography migration. By day at <span class="hl hl-g">IBM</span>, I keep mission-critical IMS environments fast, observable, and resilient — including resolving <span class="hl hl-p">high-severity performance bottlenecks</span> for one of Spain's largest banks.</p>
+        <p>On the side I build mobile products — <span class="hl hl-b">Artha</span>, <span class="hl hl-g">Mosaic</span>, and <span class="hl hl-p">Settl</span> — because I like shipping things people actually use.</p>
         <span class="sig">— signed, Aayush ✎</span>
       </div>
     </div>
@@ -433,10 +407,22 @@ section{padding:50px 0;position:relative}
     </div>
     <div class="tl">
       <div class="tl-item cur rv">
+        <div class="tl-when">2025 — PRESENT</div>
+        <div class="tl-role">Independent Full-Stack Projects</div>
+        <div class="tl-co"><b>Side Projects</b> <span class="pin">· Bangalore</span></div>
+        <ul class="tl-list">
+          <li>Built a portfolio of <b>production-grade apps</b> (Artha, Settl, Mosaic, Dhruva) on React Native (Expo) + TypeScript with Supabase/PostgreSQL backends — auth, real-time sync, and financial data models.</li>
+          <li>Integrated <b>LLM capabilities</b> via the Claude API, including streaming, structured output, and agentic patterns.</li>
+          <li>Run cloud infrastructure on <b>Vercel</b> with a Turborepo monorepo, Supabase production databases, and CI workflows.</li>
+        </ul>
+      </div>
+      <div class="tl-item cur rv">
         <div class="tl-when">JUL 2024 — PRESENT</div>
         <div class="tl-role">IMS System Programmer · Modernization &amp; Performance</div>
         <div class="tl-co"><b>IBM</b> <span class="pin">· Bangalore</span></div>
         <ul class="tl-list">
+          <li>Designed and implemented a <b>z/OS MCP Server</b> and an <b>IMS Logs MCP Server</b>, exposing mainframe operations and log analysis to LLM agents — recognized as innovation projects.</li>
+          <li>Built <b>QuantumShield</b>, a post-quantum cryptography migration agent (AI-First hackathon track) with CBOMkit, NIST PQC standards, and a React dashboard.</li>
           <li>Engaged with one of <b>Spain's largest banks</b> to resolve high-severity IMS performance constraints and enable observability-focused modernization.</li>
           <li>Led <b>GA-critical OpenTelemetry validation</b> for IMS, ensuring trace enablement never compromised subsystem stability or throughput.</li>
           <li>Owned performance validation for <b>IBM Z Digital Integration Hub (ZDIH)</b> — workload analysis, early risk identification, and release-stage transparency.</li>
@@ -476,13 +462,27 @@ section{padding:50px 0;position:relative}
       <div class="panel rv">
         <div class="panel-bar"><div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="fname">languages<span class="ext">.src</span></span></div>
         <div class="chips">
+          <span class="chip"><i class="devicon-python-plain colored"></i>Python</span>
           <span class="chip"><i class="devicon-typescript-plain colored"></i>TypeScript</span>
           <span class="chip"><i class="devicon-javascript-plain colored"></i>JavaScript</span>
-          <span class="chip"><i class="devicon-python-plain colored"></i>Python</span>
           <span class="chip"><i class="devicon-java-plain colored"></i>Java</span>
           <span class="chip"><span class="mk">›</span>COBOL</span>
           <span class="chip"><span class="mk">›</span>Assembler</span>
           <span class="chip"><span class="mk">›</span>REXX</span>
+        </div>
+      </div>
+
+      <div class="panel rv">
+        <div class="panel-bar"><div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="fname">ai-mcp<span class="ext">.ts</span></span></div>
+        <div class="chips">
+          <span class="chip"><span class="mk">◈</span>MCP server development</span>
+          <span class="chip"><span class="tbadge" style="background:#d97757">C</span>Claude API</span>
+          <span class="chip"><span class="mk">◈</span>LLM agents</span>
+          <span class="chip"><span class="mk">◈</span>Prompt engineering</span>
+          <span class="chip"><span class="mk">◈</span>SSE streaming</span>
+          <span class="chip"><span class="mk">◈</span>Tiered gating</span>
+          <span class="chip"><span class="mk">◈</span>Usage metering</span>
+          <span class="chip"><span class="mk">◈</span>AI personalities</span>
         </div>
       </div>
 
@@ -509,6 +509,7 @@ section{padding:50px 0;position:relative}
         <div class="chips">
           <span class="chip"><i class="devicon-nodejs-plain colored"></i>Node.js</span>
           <span class="chip"><i class="devicon-express-original"></i>Express</span>
+          <span class="chip"><i class="devicon-python-plain colored"></i>Python services</span>
           <span class="chip"><span class="tbadge" style="background:#3ecf8e;color:#08160f">S</span>Supabase</span>
           <span class="chip"><span class="tbadge" style="background:#d63aff">J</span>JWT auth</span>
           <span class="chip"><span class="mk">◇</span>REST APIs</span>
@@ -543,20 +544,12 @@ section{padding:50px 0;position:relative}
       </div>
 
       <div class="panel rv">
-        <div class="panel-bar"><div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="fname">ai<span class="ext">.ts</span></span></div>
-        <div class="chips">
-          <span class="chip"><span class="tbadge" style="background:#d97757">C</span>Claude API</span>
-          <span class="chip"><span class="mk">◈</span>SSE streaming</span>
-          <span class="chip"><span class="mk">◈</span>Tiered gating</span>
-          <span class="chip"><span class="mk">◈</span>Usage metering</span>
-          <span class="chip"><span class="mk">◈</span>AI personalities</span>
-        </div>
-      </div>
-
-      <div class="panel rv">
         <div class="panel-bar"><div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="fname">cloud<span class="ext">.yml</span></span></div>
         <div class="chips">
+          <span class="chip"><span class="tbadge" style="background:#000">▲</span>Vercel</span>
+          <span class="chip"><span class="tbadge" style="background:#5b3df0">T</span>Turborepo</span>
           <span class="chip"><i class="devicon-amazonwebservices-plain-wordmark colored"></i>AWS S3</span>
+          <span class="chip"><span class="tbadge" style="background:#f38020;color:#231400">C</span>Cloudflare</span>
           <span class="chip"><span class="tbadge" style="background:#5b3df0">S</span>Setu (AA)</span>
           <span class="chip"><span class="tbadge" style="background:#000">P</span>Plaid</span>
           <span class="chip"><span class="tbadge" style="background:#5f5cff">▲</span>Polygon.io</span>
@@ -598,6 +591,7 @@ section{padding:50px 0;position:relative}
         <div class="chips">
           <span class="chip"><i class="devicon-git-plain colored"></i>Git</span>
           <span class="chip"><i class="devicon-ansible-plain colored"></i>Ansible</span>
+          <span class="chip"><span class="mk">⚙</span>CI/CD</span>
           <span class="chip"><span class="mk">⚙</span>ZOAU</span>
           <span class="chip"><span class="mk">⚙</span>REXX Automation</span>
           <span class="chip"><span class="mk">⚙</span>JCL Validation Frameworks</span>
@@ -671,7 +665,34 @@ section{padding:50px 0;position:relative}
     <div class="sec-head rv">
       <span class="cmd">$ ./run</span><h2>projects</h2><span class="ln"></span>
     </div>
+    <p class="proj-note rv"><span class="mk">$ ls -la</span> — most of my work lives in <b>private repos</b>: production apps and internal tooling I can't open-source. Happy to walk through any of it live.</p>
     <div class="proj-grid">
+
+      <div class="proj rv">
+        <div class="proj-top">
+          <span class="proj-icon proj-mcp">⛁</span>
+          <div>
+            <h3>z/OS &amp; IMS Logs MCP Servers</h3>
+            <div class="tagline">ai × mainframe</div>
+          </div>
+        </div>
+        <p>MCP servers that expose mainframe operations and log analysis to LLM agents — bringing modern AI tooling to enterprise infrastructure.</p>
+        <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">MCP SDK</span><span class="ptag">LLM Agents</span><span class="ptag">z/OS</span></div>
+        <a class="proj-link" href="#stack" rel="noopener">see full stack ↑</a>
+      </div>
+
+      <div class="proj rv">
+        <div class="proj-top">
+          <span class="proj-icon proj-qs">Q</span>
+          <div>
+            <h3>QuantumShield</h3>
+            <div class="tagline">pqc migration agent</div>
+          </div>
+        </div>
+        <p>An AI agent for post-quantum cryptography migration planning — scans cryptographic inventories and maps a path to NIST PQC standards.</p>
+        <div class="proj-tags"><span class="ptag">AI Agent</span><span class="ptag">CBOMkit</span><span class="ptag">NIST PQC</span><span class="ptag">React</span></div>
+        <a class="proj-link" href="#stack" rel="noopener">see full stack ↑</a>
+      </div>
 
       <div class="proj rv">
         <div class="proj-top">
@@ -683,6 +704,19 @@ section{padding:50px 0;position:relative}
         </div>
         <p>A personal finance app that unifies money, budgets, and investments into one intelligent view — with an AI assistant, live market data, and bank-grade account aggregation.</p>
         <div class="proj-tags"><span class="ptag">React Native</span><span class="ptag">Node.js</span><span class="ptag">AI</span><span class="ptag">Fintech</span></div>
+        <a class="proj-link" href="#stack" rel="noopener">see full stack ↑</a>
+      </div>
+
+      <div class="proj rv">
+        <div class="proj-top">
+          <span class="proj-icon proj-mosaic">M</span>
+          <div>
+            <h3>Mosaic</h3>
+            <div class="tagline">personal finance</div>
+          </div>
+        </div>
+        <p>A comprehensive personal finance platform with a warm, considered design language — budgets, accounts, and insights in one place.</p>
+        <div class="proj-tags"><span class="ptag">React Native</span><span class="ptag">TypeScript</span><span class="ptag">Supabase</span></div>
         <a class="proj-link" href="#stack" rel="noopener">see full stack ↑</a>
       </div>
 
@@ -726,15 +760,15 @@ section{padding:50px 0;position:relative}
   <div class="wrap">
     <div class="foot-grid rv">
       <div>
-        <h3>Let's talk systems.</h3>
-        <p>Open to mainframe modernization challenges, performance work, and good conversations about resilient infrastructure.</p>
+        <h3>Let's build something.</h3>
+        <p>Open to full-stack and AI engineering work, MCP/agent tooling, and good conversations about bridging legacy systems with modern AI.</p>
       </div>
       <div class="socials">
         <a class="social" href="https://www.linkedin.com/in/aayushkumar0795" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24"><path d="M20.4 20.4h-3.5v-5.6c0-1.3 0-3-1.9-3s-2.1 1.4-2.1 2.9v5.7H9.4V9h3.3v1.6h.1c.5-.9 1.6-1.9 3.3-1.9 3.5 0 4.2 2.3 4.2 5.3v6.4zM5.3 7.4a2 2 0 110-4.1 2 2 0 010 4.1zM7.1 20.4H3.6V9H7v11.4zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>linkedin
         </a>
-        <a class="social" href="/cdn-cgi/l/email-protection#0667677f73756e6d736b677436313f33466f656a6973622865696b">
-          <svg viewBox="0 0 24 24"><path d="M2 4h20c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm10 7L2.4 5.8 2 6v.5l10 5.4 10-5.4V6l-.4-.2L12 11z"/></svg><span class="__cf_email__" data-cfemail="d9b8b8a0acaab1b2acb4b8abe9eee0ec99b0bab5b6acbdf7bab6b4">[email&#160;protected]</span>
+        <a class="social" href="mailto:aayushkumar0795@icloud.com">
+          <svg viewBox="0 0 24 24"><path d="M2 4h20c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm10 7L2.4 5.8 2 6v.5l10 5.4 10-5.4V6l-.4-.2L12 11z"/></svg>aayushkumar0795@icloud.com
         </a>
         <a class="social" href="tel:+917869916212">
           <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>+91 78699 16212
@@ -767,7 +801,7 @@ section{padding:50px 0;position:relative}
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="image-slot.js"></script>
+<script src="image-slot.js"></script>
 <script>
 (function(){
   /* ---- THEME ---- */
@@ -781,7 +815,7 @@ section{padding:50px 0;position:relative}
   });
 
   /* ---- TYPING ROLE ---- */
-  var roles=["IBM z/OS System Programmer","IMS DB/DC Specialist","Mainframe Modernization Engineer","Performance & Observability Engineer"];
+  var roles=["Full-Stack Engineer","AI & MCP Developer","IBM z/OS System Programmer","Performance & Observability Engineer"];
   var typed=document.getElementById('typed'), ri=0,ci=0,del=false;
   function tick(){
     var r=roles[ri];
