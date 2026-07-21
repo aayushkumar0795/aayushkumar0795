@@ -14,9 +14,9 @@ I design and ship full-stack products: React Native/TypeScript frontends, Python
 
 ### `$ cat experience.log`
 
-- **IBM** — IMS System Programmer · Modernization & Performance *(Jul 2024–present)*
-- **Rocket Software** — Mainframe Infrastructure Engineer *(2022–2024)*
-- **DXC Technology** — Mainframe Developer, Insurance Domain *(2017–2022)*
+- **IBM** — IMS System Programmer, Modernization & Performance *(Feb 2025–present)* · previously AI/ML Engineer, watsonx Code Assistant for Z *(Jul 2024–Jan 2025)*
+- **Rocket Software** — Mainframe Infrastructure Engineer *(Apr 2022–Jun 2024)*
+- **DXC Technology** — Mainframe Developer, Insurance Domain *(Nov 2017–Apr 2022)*
 
 ### `$ ls ~/skills`
 
