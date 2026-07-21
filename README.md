@@ -2,7 +2,7 @@
 
 # Aayush Kumar
 
-**Software Engineer — Full-Stack, AI & Enterprise Systems** — building AI-powered applications end to end, backed by 8+ years of enterprise systems engineering.
+**Software Engineer — Full-Stack, AI & Enterprise Systems** — building AI-powered applications end to end, backed by 9+ years of enterprise systems engineering.
 
 I design and ship full-stack products: React Native/TypeScript frontends, Python and Node.js services, Supabase/PostgreSQL backends, and LLM-powered features via the Claude API. I've built MCP servers that bridge AI agents to mainframe subsystems — bringing modern AI tooling into some of the most regulated infrastructure on the planet. By day at IBM, I keep mission-critical IMS environments fast, observable, and resilient.
 
@@ -15,7 +15,6 @@ I design and ship full-stack products: React Native/TypeScript frontends, Python
 ### `$ cat experience.log`
 
 - **IBM** — IMS System Programmer · Modernization & Performance *(Jul 2024–present)*
-- **Side Projects — alongside IBM role** — Independent full-stack apps (Artha, Mosaic, Settl) *(2025–present)*
 - **Rocket Software** — Mainframe Infrastructure Engineer *(2022–2024)*
 - **DXC Technology** — Mainframe Developer, Insurance Domain *(2017–2022)*
 
