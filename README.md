@@ -14,17 +14,18 @@ I design and ship full-stack products: React Native/TypeScript frontends, Python
 
 ### `$ cat experience.log`
 
-- **IBM** — IMS System Programmer · Modernization & Performance *(2024–present)*
+- **IBM** — IMS System Programmer · Modernization & Performance *(Jul 2024–present)*
+- **Side Projects — alongside IBM role** — Independent full-stack apps (Artha, Mosaic, Settl) *(2025–present)*
 - **Rocket Software** — Mainframe Infrastructure Engineer *(2022–2024)*
 - **DXC Technology** — Mainframe Developer, Insurance Domain *(2017–2022)*
 
 ### `$ ls ~/skills`
 
-**Languages** · Python · TypeScript · JavaScript · SQL · Java · COBOL · REXX · Assembler
-**AI & MCP** · MCP server development · Claude API · LLM agents · Prompt engineering
-**Full-Stack** · React · React Native (Expo) · Node.js · Supabase (PostgreSQL) · REST APIs
-**Cloud & DevOps** · Vercel · Turborepo · Cloudflare · CI/CD · Ansible
-**Enterprise** · z/OS · IMS DB/DC · OpenTelemetry · Performance Engineering · SMP/E
+- **Languages** · Python · TypeScript · JavaScript · SQL · Java · COBOL · REXX · Assembler
+- **AI & MCP** · MCP server development · Claude API · LLM agents · Prompt engineering
+- **Full-Stack** · React · React Native (Expo) · Node.js · Supabase (PostgreSQL) · REST APIs
+- **Cloud & DevOps** · Vercel · Turborepo · Cloudflare · CI/CD · Ansible
+- **Enterprise** · z/OS · IMS DB/DC · OpenTelemetry · Performance Engineering · SMP/E
 
 ### `$ ./projects`
 

@@ -4,6 +4,17 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Aayush Kumar — Full-Stack &amp; AI Engineer</title>
+<meta name="description" content="Full-stack + AI engineer in Bangalore. React Native, Node.js, Python, Supabase — and MCP servers that connect LLM agents to IBM mainframe systems. 8+ years of enterprise engineering." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Aayush Kumar — Full-Stack &amp; AI Engineer" />
+<meta property="og:description" content="Full-stack + AI engineer building MCP servers, LLM-powered apps, and keeping mission-critical IBM mainframe systems fast and observable." />
+<meta property="og:url" content="https://aayushkumar0795.github.io/aayushkumar0795/" />
+<meta property="og:image" content="https://aayushkumar0795.github.io/aayushkumar0795/aayush.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Aayush Kumar — Full-Stack &amp; AI Engineer" />
+<meta name="twitter:description" content="Full-stack + AI engineer building MCP servers, LLM-powered apps, and keeping mission-critical IBM mainframe systems fast and observable." />
+<meta name="twitter:image" content="https://aayushkumar0795.github.io/aayushkumar0795/aayush.jpg" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23090c11'/%3E%3Cpath d='M14 20l14 12-14 12' stroke='%23a6f24d' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M34 44h18' stroke='%23a6f24d' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -88,7 +99,11 @@ a{color:inherit;text-decoration:none}
 .portrait-bar{display:flex;align-items:center;gap:9px;padding:11px 14px;background:var(--surface-2);
   border-bottom:1px solid var(--border)}
 .portrait-bar .fname{font-family:"JetBrains Mono",monospace;font-size:12px;color:var(--text-dim)}
-.portrait-frame image-slot{display:block;width:100%;height:calc(100% - 40px)}
+.portrait-body{position:relative;width:100%;height:calc(100% - 40px);
+  background:linear-gradient(160deg,var(--surface-2),var(--bg-2))}
+.portrait-body img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top}
+.portrait-fallback{position:absolute;inset:0;display:grid;place-items:center;
+  font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--text-faint);text-align:center;padding:20px}
 .portrait-tag{position:absolute;left:14px;bottom:14px;z-index:3;font-family:"JetBrains Mono",monospace;
   font-size:11.5px;color:var(--accent);background:color-mix(in srgb,var(--bg) 72%,transparent);
   backdrop-filter:blur(6px);border:1px solid var(--border);padding:6px 11px;border-radius:8px;pointer-events:none}
@@ -208,6 +223,9 @@ section{padding:50px 0;position:relative}
 .chip i{font-size:17px;line-height:1}
 .chip:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-glow);transform:translateY(-2px)}
 .chip .mk{color:var(--accent);font-family:"JetBrains Mono",monospace;font-size:13px}
+.chip .si{width:16px;height:16px;display:block;object-fit:contain}
+.tbadge{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:5px;
+  font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:700;color:#fff;line-height:1}
 
 /* ============ ARCH / METHOD ============ */
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:20px}
@@ -229,7 +247,6 @@ section{padding:50px 0;position:relative}
 .proj-icon{width:54px;height:54px;border-radius:14px;display:grid;place-items:center;
   font-weight:700;font-size:24px;flex:0 0 auto;color:#fff;letter-spacing:-.02em;
   box-shadow:0 8px 20px -8px rgba(0,0,0,.5)}
-.proj-icon image-slot{width:54px;height:54px}
 .proj-artha{background:linear-gradient(140deg,#1f8a5b,#0f5f3c)}
 .proj-settl{background:linear-gradient(140deg,#6d5df0,#4733c2)}
 .proj-mosaic{background:linear-gradient(140deg,#d9a441,#a3702a)}
@@ -261,7 +278,8 @@ section{padding:50px 0;position:relative}
 .ai-card .name{font-weight:600;font-size:14.5px}
 .ai-badge{width:40px;height:40px;border-radius:11px;display:grid;place-items:center;position:relative;
   font-family:"JetBrains Mono",monospace;font-weight:700;font-size:15px;color:#fff;flex:0 0 auto;overflow:hidden}
-.ai-badge image-slot{position:absolute;inset:0;width:40px;height:40px;z-index:2}
+.ai-badge img{width:22px;height:22px;object-fit:contain}
+.inv{filter:brightness(0) invert(1)}
 .ai-claude{background:#d97757}
 .ai-gpt{background:#10a37f}
 .ai-gemini{background:linear-gradient(135deg,#4285f4,#9b6dd6)}
@@ -312,6 +330,9 @@ section{padding:50px 0;position:relative}
 .field textarea{resize:vertical;min-height:88px;font-family:inherit}
 .modal-done{text-align:center;padding:18px 0 6px}
 .modal-done .big{font-size:42px;color:var(--accent);margin-bottom:10px}
+.modal-done.err .big{color:var(--dot-r)}
+.form-status{display:none;font-family:"JetBrains Mono",monospace;font-size:12.5px;color:var(--dot-r);margin-bottom:12px}
+.btn[disabled]{opacity:.6;cursor:wait;transform:none !important}
 .x{position:absolute;top:11px;right:13px;z-index:3;width:26px;height:26px;border-radius:7px;
   display:grid;place-items:center;cursor:pointer;color:var(--text-dim);font-size:16px}
 .x:hover{color:var(--text);background:var(--surface-2)}
@@ -366,11 +387,12 @@ section{padding:50px 0;position:relative}
     </div>
     <div class="cta">
       <a href="#projects" class="btn btn-primary">./view-projects</a>
+      <a href="./resume.pdf" class="btn btn-ghost" download>⤓ download resume</a>
       <button class="btn btn-ghost" id="open-contact">get in touch →</button>
     </div>
     <div class="stats">
       <div class="stat"><div class="n"><b>8</b>+</div><div class="l">years engineering</div></div>
-      <div class="stat"><div class="n"><b>4</b></div><div class="l">apps built &amp; shipped</div></div>
+      <div class="stat"><div class="n"><b>4</b></div><div class="l">production apps</div></div>
       <div class="stat"><div class="n"><b>2</b></div><div class="l">MCP servers</div></div>
       <div class="stat"><div class="n"><b>8</b></div><div class="l">certifications</div></div>
     </div>
@@ -378,7 +400,10 @@ section{padding:50px 0;position:relative}
     <div class="hero-portrait">
       <div class="portrait-frame">
         <div class="portrait-bar"><div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="fname">aayush.jpg</span></div>
-        <image-slot id="hero-portrait" shape="rect" placeholder="drop your photo"></image-slot>
+        <div class="portrait-body">
+          <div class="portrait-fallback">$ open aayush.jpg<br />file not found — drop aayush.jpg in the repo root</div>
+          <img src="./aayush.jpg" alt="Aayush Kumar smiling in a navy blazer, striped shirt, and tinted glasses" onerror="this.remove()" />
+        </div>
         <span class="portrait-tag">$ ./aayush --kumar</span>
       </div>
     </div>
@@ -407,16 +432,6 @@ section{padding:50px 0;position:relative}
     </div>
     <div class="tl">
       <div class="tl-item cur rv">
-        <div class="tl-when">2025 — PRESENT</div>
-        <div class="tl-role">Independent Full-Stack Projects</div>
-        <div class="tl-co"><b>Side Projects</b> <span class="pin">· Bangalore</span></div>
-        <ul class="tl-list">
-          <li>Built a portfolio of <b>production-grade apps</b> (Artha, Settl, Mosaic, Dhruva) on React Native (Expo) + TypeScript with Supabase/PostgreSQL backends — auth, real-time sync, and financial data models.</li>
-          <li>Integrated <b>LLM capabilities</b> via the Claude API, including streaming, structured output, and agentic patterns.</li>
-          <li>Run cloud infrastructure on <b>Vercel</b> with a Turborepo monorepo, Supabase production databases, and CI workflows.</li>
-        </ul>
-      </div>
-      <div class="tl-item cur rv">
         <div class="tl-when">JUL 2024 — PRESENT</div>
         <div class="tl-role">IMS System Programmer · Modernization &amp; Performance</div>
         <div class="tl-co"><b>IBM</b> <span class="pin">· Bangalore</span></div>
@@ -427,6 +442,16 @@ section{padding:50px 0;position:relative}
           <li>Led <b>GA-critical OpenTelemetry validation</b> for IMS, ensuring trace enablement never compromised subsystem stability or throughput.</li>
           <li>Owned performance validation for <b>IBM Z Digital Integration Hub (ZDIH)</b> — workload analysis, early risk identification, and release-stage transparency.</li>
           <li>Built a reusable performance dashboard that improved reporting productivity by <b>50%+</b>.</li>
+        </ul>
+      </div>
+      <div class="tl-item cur rv">
+        <div class="tl-when">2025 — PRESENT</div>
+        <div class="tl-role">Side Projects — alongside IBM role</div>
+        <div class="tl-co"><b>Independent Full-Stack Work</b> <span class="pin">· Bangalore</span></div>
+        <ul class="tl-list">
+          <li>Built a portfolio of <b>production-grade apps</b> (Artha, Settl, Mosaic, Dhruva) on React Native (Expo) + TypeScript with Supabase/PostgreSQL backends — auth, real-time sync, and financial data models.</li>
+          <li>Integrated <b>LLM capabilities</b> via the Claude API, including streaming, structured output, and agentic patterns.</li>
+          <li>Run cloud infrastructure on <b>Vercel</b> with a Turborepo monorepo, Supabase production databases, and CI workflows.</li>
         </ul>
       </div>
       <div class="tl-item rv">
@@ -476,13 +501,10 @@ section{padding:50px 0;position:relative}
         <div class="panel-bar"><div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="fname">ai-mcp<span class="ext">.ts</span></span></div>
         <div class="chips">
           <span class="chip"><span class="mk">◈</span>MCP server development</span>
-          <span class="chip"><span class="tbadge" style="background:#d97757">C</span>Claude API</span>
+          <span class="chip"><img class="si" src="https://cdn.simpleicons.org/claude" alt="" loading="lazy" />Claude API</span>
           <span class="chip"><span class="mk">◈</span>LLM agents</span>
           <span class="chip"><span class="mk">◈</span>Prompt engineering</span>
           <span class="chip"><span class="mk">◈</span>SSE streaming</span>
-          <span class="chip"><span class="mk">◈</span>Tiered gating</span>
-          <span class="chip"><span class="mk">◈</span>Usage metering</span>
-          <span class="chip"><span class="mk">◈</span>AI personalities</span>
         </div>
       </div>
 
@@ -491,16 +513,14 @@ section{padding:50px 0;position:relative}
         <div class="chips">
           <span class="chip"><i class="devicon-react-original colored"></i>React</span>
           <span class="chip"><i class="devicon-react-original colored"></i>React Native</span>
-          <span class="chip"><span class="tbadge" style="background:#1b1f23">E</span>Expo</span>
-          <span class="chip"><span class="tbadge" style="background:#1b1f23">⇄</span>Expo Router</span>
+          <span class="chip"><img class="si" src="https://cdn.simpleicons.org/expo/8a98ab" alt="" loading="lazy" />Expo</span>
+          <span class="chip"><img class="si" src="https://cdn.simpleicons.org/expo/8a98ab" alt="" loading="lazy" />Expo Router</span>
           <span class="chip"><i class="devicon-tailwindcss-original colored"></i>NativeWind</span>
           <span class="chip"><i class="devicon-vitejs-plain colored"></i>Vite</span>
-          <span class="chip"><span class="tbadge" style="background:#ff4154">Q</span>React Query</span>
+          <span class="chip"><img class="si" src="https://cdn.simpleicons.org/reactquery" alt="" loading="lazy" />React Query</span>
           <span class="chip"><span class="tbadge" style="background:#443e38">Z</span>Zustand</span>
-          <span class="chip"><span class="tbadge" style="background:#0055ff">M</span>Motion</span>
+          <span class="chip"><img class="si" src="https://cdn.simpleicons.org/framer/0055FF" alt="" loading="lazy" />Motion</span>
           <span class="chip"><i class="devicon-css3-plain colored"></i>CSS</span>
-          <span class="chip"><span class="mk">◇</span>react-native-svg</span>
-          <span class="chip"><span class="mk">◇</span>qrcode</span>
         </div>
       </div>
 
@@ -510,13 +530,11 @@ section{padding:50px 0;position:relative}
           <span class="chip"><i class="devicon-nodejs-plain colored"></i>Node.js</span>
           <span class="chip"><i class="devicon-express-original"></i>Express</span>
           <span class="chip"><i class="devicon-python-plain colored"></i>Python services</span>
-          <span class="chip"><span class="tbadge" style="background:#3ecf8e;color:#08160f">S</span>Supabase</span>
-          <span class="chip"><span class="tbadge" style="background:#d63aff">J</span>JWT auth</span>
+          <span class="chip"><img class="si" src="https://cdn.simpleicons.org/supabase" alt="" loading="lazy" />Supabase</span>
+          <span class="chip"><img class="si" src="https://cdn.simpleicons.org/jsonwebtokens/d63aff" alt="" loading="lazy" />JWT auth</span>
           <span class="chip"><span class="mk">◇</span>REST APIs</span>
           <span class="chip"><span class="mk">◇</span>SSE streaming</span>
-          <span class="chip"><span class="mk">◇</span>Helmet / CORS</span>
           <span class="chip"><span class="mk">◇</span>Rate limiting</span>
-          <span class="chip"><span class="mk">◇</span>node-cron</span>
           <span class="chip"><span class="mk">◇</span>Realtime sync</span>
         </div>
       </div>
@@ -534,7 +552,7 @@ section{padding:50px 0;position:relative}
       <div class="panel rv">
         <div class="panel-bar"><div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="fname">mobile<span class="ext">.swift</span></span></div>
         <div class="chips">
-          <span class="chip"><span class="tbadge" style="background:#119eff">⚡</span>Capacitor</span>
+          <span class="chip"><img class="si" src="https://cdn.simpleicons.org/capacitor" alt="" loading="lazy" />Capacitor</span>
           <span class="chip"><i class="devicon-apple-original"></i>Apple Sign-In</span>
           <span class="chip"><i class="devicon-google-plain colored"></i>Google Auth</span>
           <span class="chip"><span class="mk">◇</span>Face ID / biometrics</span>
@@ -546,15 +564,12 @@ section{padding:50px 0;position:relative}
       <div class="panel rv">
         <div class="panel-bar"><div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="fname">cloud<span class="ext">.yml</span></span></div>
         <div class="chips">
-          <span class="chip"><span class="tbadge" style="background:#000">▲</span>Vercel</span>
-          <span class="chip"><span class="tbadge" style="background:#5b3df0">T</span>Turborepo</span>
+          <span class="chip"><img class="si" src="https://cdn.simpleicons.org/vercel/8a98ab" alt="" loading="lazy" />Vercel</span>
+          <span class="chip"><img class="si" src="https://cdn.simpleicons.org/turborepo" alt="" loading="lazy" />Turborepo</span>
           <span class="chip"><i class="devicon-amazonwebservices-plain-wordmark colored"></i>AWS S3</span>
-          <span class="chip"><span class="tbadge" style="background:#f38020;color:#231400">C</span>Cloudflare</span>
+          <span class="chip"><img class="si" src="https://cdn.simpleicons.org/cloudflare" alt="" loading="lazy" />Cloudflare</span>
           <span class="chip"><span class="tbadge" style="background:#5b3df0">S</span>Setu (AA)</span>
-          <span class="chip"><span class="tbadge" style="background:#000">P</span>Plaid</span>
-          <span class="chip"><span class="tbadge" style="background:#5f5cff">▲</span>Polygon.io</span>
-          <span class="chip"><span class="mk">◉</span>Frankfurter FX</span>
-          <span class="chip"><span class="mk">◉</span>Parqet</span>
+          <span class="chip"><span class="tbadge" style="background:#111">P</span>Plaid</span>
         </div>
       </div>
 
@@ -576,7 +591,7 @@ section{padding:50px 0;position:relative}
       <div class="panel rv">
         <div class="panel-bar"><div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="fname">observability<span class="ext">.rmf</span></span></div>
         <div class="chips">
-          <span class="chip"><span class="mk">◉</span>OpenTelemetry</span>
+          <span class="chip"><img class="si" src="https://cdn.simpleicons.org/opentelemetry" alt="" loading="lazy" />OpenTelemetry</span>
           <span class="chip"><span class="mk">◉</span>Z Digital Integration Hub</span>
           <span class="chip"><span class="mk">◉</span>Trace Enablement</span>
           <span class="chip"><span class="mk">◈</span>IMS Performance Analyzer</span>
@@ -595,18 +610,6 @@ section{padding:50px 0;position:relative}
           <span class="chip"><span class="mk">⚙</span>ZOAU</span>
           <span class="chip"><span class="mk">⚙</span>REXX Automation</span>
           <span class="chip"><span class="mk">⚙</span>JCL Validation Frameworks</span>
-          <span class="chip"><span class="mk">⚙</span>Metro bundler</span>
-        </div>
-      </div>
-
-      <div class="panel rv">
-        <div class="panel-bar"><div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="fname">testing<span class="ext">.spec</span></span></div>
-        <div class="chips">
-          <span class="chip"><span class="tbadge" style="background:#fcc72b;color:#3a2e05">V</span>Vitest</span>
-          <span class="chip"><span class="mk">◇</span>node:test</span>
-          <span class="chip"><span class="mk">◇</span>Unit tests</span>
-          <span class="chip"><span class="mk">◇</span>xlsx parsing</span>
-          <span class="chip"><span class="mk">◇</span>Light/Dark theming</span>
         </div>
       </div>
 
@@ -652,10 +655,10 @@ section{padding:50px 0;position:relative}
     <div class="panel rv">
       <div class="panel-bar"><div class="dots"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div><span class="fname">ai-toolkit<span class="ext">.json</span></span></div>
       <div class="chips ai-grid">
-        <div class="ai-card"><span class="ai-badge ai-claude">C<image-slot id="ai-claude" shape="rounded" radius="11" placeholder=""></image-slot></span><span class="name">Claude</span></div>
-        <div class="ai-card"><span class="ai-badge ai-gpt">G<image-slot id="ai-gpt" shape="rounded" radius="11" placeholder=""></image-slot></span><span class="name">ChatGPT</span></div>
-        <div class="ai-card"><span class="ai-badge ai-gemini">✦<image-slot id="ai-gemini" shape="rounded" radius="11" placeholder=""></image-slot></span><span class="name">Gemini</span></div>
-        <div class="ai-card"><span class="ai-badge ai-bob2">B<image-slot id="ai-bob" shape="rounded" radius="11" placeholder=""></image-slot></span><span class="name">Bob (IBM)</span></div>
+        <div class="ai-card"><span class="ai-badge ai-claude"><img src="https://cdn.simpleicons.org/claude/ffffff" alt="Claude logo" loading="lazy" /></span><span class="name">Claude</span></div>
+        <div class="ai-card"><span class="ai-badge ai-gpt"><img class="inv" src="https://unpkg.com/simple-icons@9/icons/openai.svg" alt="ChatGPT logo" loading="lazy" /></span><span class="name">ChatGPT</span></div>
+        <div class="ai-card"><span class="ai-badge ai-gemini"><img src="https://cdn.simpleicons.org/googlegemini/ffffff" alt="Gemini logo" loading="lazy" /></span><span class="name">Gemini</span></div>
+        <div class="ai-card"><span class="ai-badge ai-bob2"><img class="inv" src="https://unpkg.com/simple-icons@9/icons/ibm.svg" alt="IBM logo" loading="lazy" /></span><span class="name">Bob (IBM)</span></div>
       </div>
     </div>
   </section>
@@ -678,7 +681,9 @@ section{padding:50px 0;position:relative}
         </div>
         <p>MCP servers that expose mainframe operations and log analysis to LLM agents — bringing modern AI tooling to enterprise infrastructure.</p>
         <div class="proj-tags"><span class="ptag">Python</span><span class="ptag">MCP SDK</span><span class="ptag">LLM Agents</span><span class="ptag">z/OS</span></div>
-        <a class="proj-link" href="#stack" rel="noopener">see full stack ↑</a>
+        <!-- TODO: supply public repo URL for the clean-room rebuild. This link will point to a
+             clean-room public rebuild of the mainframe-logs MCP server — NOT IBM code. -->
+        <a class="proj-link" href="#" data-todo="mcp-clean-room-repo-url">code →</a>
       </div>
 
       <div class="proj rv">
@@ -691,12 +696,13 @@ section{padding:50px 0;position:relative}
         </div>
         <p>An AI agent for post-quantum cryptography migration planning — scans cryptographic inventories and maps a path to NIST PQC standards.</p>
         <div class="proj-tags"><span class="ptag">AI Agent</span><span class="ptag">CBOMkit</span><span class="ptag">NIST PQC</span><span class="ptag">React</span></div>
-        <a class="proj-link" href="#stack" rel="noopener">see full stack ↑</a>
+        <!-- TODO: supply public repo URL, demo video, or screenshots/case-study page for QuantumShield. -->
+        <a class="proj-link" href="#" data-todo="quantumshield-link">case study →</a>
       </div>
 
       <div class="proj rv">
         <div class="proj-top">
-          <span class="proj-icon proj-artha"><image-slot id="proj-artha" shape="rounded" radius="14" placeholder="A"></image-slot></span>
+          <span class="proj-icon proj-artha">A</span>
           <div>
             <h3>Artha</h3>
             <div class="tagline">wealth intelligence</div>
@@ -704,7 +710,8 @@ section{padding:50px 0;position:relative}
         </div>
         <p>A personal finance app that unifies money, budgets, and investments into one intelligent view — with an AI assistant, live market data, and bank-grade account aggregation.</p>
         <div class="proj-tags"><span class="ptag">React Native</span><span class="ptag">Node.js</span><span class="ptag">AI</span><span class="ptag">Fintech</span></div>
-        <a class="proj-link" href="#stack" rel="noopener">see full stack ↑</a>
+        <!-- TODO: supply TestFlight link, App Store link, or screenshots page for Artha. -->
+        <a class="proj-link" href="#" data-todo="artha-link">case study →</a>
       </div>
 
       <div class="proj rv">
@@ -717,12 +724,13 @@ section{padding:50px 0;position:relative}
         </div>
         <p>A comprehensive personal finance platform with a warm, considered design language — budgets, accounts, and insights in one place.</p>
         <div class="proj-tags"><span class="ptag">React Native</span><span class="ptag">TypeScript</span><span class="ptag">Supabase</span></div>
-        <a class="proj-link" href="#stack" rel="noopener">see full stack ↑</a>
+        <!-- TODO: supply TestFlight link, public repo URL, or screenshots page for Mosaic. -->
+        <a class="proj-link" href="#" data-todo="mosaic-link">case study →</a>
       </div>
 
       <div class="proj rv">
         <div class="proj-top">
-          <span class="proj-icon proj-settl"><image-slot id="proj-settl" shape="rounded" radius="14" placeholder="S"></image-slot></span>
+          <span class="proj-icon proj-settl">S</span>
           <div>
             <h3>Settl</h3>
             <div class="tagline">money split</div>
@@ -730,7 +738,8 @@ section{padding:50px 0;position:relative}
         </div>
         <p>Split shared expenses and settle up with friends — no awkward math, no spreadsheets. A web app wrapped as a native iOS experience with real-time sync.</p>
         <div class="proj-tags"><span class="ptag">React</span><span class="ptag">Supabase</span><span class="ptag">Capacitor</span><span class="ptag">iOS</span></div>
-        <a class="proj-link" href="#stack" rel="noopener">see full stack ↑</a>
+        <!-- TODO: supply TestFlight link, App Store link, or live web-app URL for Settl. -->
+        <a class="proj-link" href="#" data-todo="settl-link">code →</a>
       </div>
 
     </div>
@@ -770,8 +779,8 @@ section{padding:50px 0;position:relative}
         <a class="social" href="mailto:aayushkumar0795@icloud.com">
           <svg viewBox="0 0 24 24"><path d="M2 4h20c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H2c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2zm10 7L2.4 5.8 2 6v.5l10 5.4 10-5.4V6l-.4-.2L12 11z"/></svg>aayushkumar0795@icloud.com
         </a>
-        <a class="social" href="tel:+917869916212">
-          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1l-2.2 2.2z"/></svg>+91 78699 16212
+        <a class="social" href="./resume.pdf" download>
+          <svg viewBox="0 0 24 24"><path d="M12 3v10.6l3.3-3.3 1.4 1.4L12 17.4l-4.7-4.7 1.4-1.4 3.3 3.3V3h2zM5 19h14v2H5v-2z"/></svg>download resume
         </a>
       </div>
     </div>
@@ -791,17 +800,19 @@ section{padding:50px 0;position:relative}
     <div class="modal-body" id="modal-body">
       <h3>$ ./say-hello</h3>
       <p class="sub">Drop a message — I usually reply within a day.</p>
-      <form id="cform">
+      <!-- TODO: create a free Formspree account (formspree.io), make a form, and replace
+           FORMSPREE_ID below with your real form ID (looks like "mqkrzabc"). -->
+      <form id="cform" action="https://formspree.io/f/FORMSPREE_ID" method="POST">
         <div class="field"><label>name <span class="req">*</span></label><input required name="name" placeholder="Your name" /></div>
         <div class="field"><label>email <span class="req">*</span></label><input required type="email" name="email" placeholder="you@example.com" /></div>
-        <div class="field"><label>message <span class="req">*</span></label><textarea required name="msg" placeholder="Let's talk about..."></textarea></div>
+        <div class="field"><label>message <span class="req">*</span></label><textarea required name="message" placeholder="Let's talk about..."></textarea></div>
+        <p class="form-status" id="form-status" role="alert"></p>
         <button class="btn btn-primary" type="submit" style="width:100%;justify-content:center">send message →</button>
       </form>
     </div>
   </div>
 </div>
 
-<script src="image-slot.js"></script>
 <script>
 (function(){
   /* ---- THEME ---- */
@@ -841,8 +852,20 @@ section{padding:50px 0;position:relative}
     var f=document.getElementById('cform');
     if(f) f.addEventListener('submit',function(e){
       e.preventDefault();
-      body.innerHTML='<div class="modal-done"><div class="big">✓</div><h3>Message sent!</h3><p class="sub">Thanks for reaching out — I\'ll get back to you soon.</p><button class="btn btn-ghost" id="md-close" style="margin-top:8px">close</button></div>';
-      document.getElementById('md-close').onclick=close; bindClose();
+      var status=document.getElementById('form-status');
+      var btn=f.querySelector('button[type=submit]');
+      btn.disabled=true; btn.textContent='sending…'; status.style.display='none';
+      fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}})
+        .then(function(res){
+          if(!res.ok) throw new Error('formspree '+res.status);
+          body.innerHTML='<div class="modal-done"><div class="big">✓</div><h3>Message sent!</h3><p class="sub">Thanks for reaching out — I\'ll get back to you soon.</p><button class="btn btn-ghost" id="md-close" style="margin-top:8px">close</button></div>';
+          document.getElementById('md-close').onclick=close; bindClose();
+        })
+        .catch(function(){
+          btn.disabled=false; btn.textContent='send message →';
+          status.style.display='block';
+          status.innerHTML='✗ couldn\'t send — please email me directly at <a href="mailto:aayushkumar0795@icloud.com" style="text-decoration:underline">aayushkumar0795@icloud.com</a>';
+        });
     });
   }
   bind();
