@@ -2,9 +2,9 @@
 
 # Aayush Kumar
 
-**Software Engineer — Full-Stack, AI & Enterprise Systems** — building AI-powered applications end to end, backed by 8+ years of enterprise systems engineering.
+**Software Engineer — Full-Stack, AI & Enterprise Systems** — building AI-powered applications end to end, backed by 9+ years of enterprise systems engineering.
 
-I design and ship full-stack products: React Native/TypeScript frontends, Python and Node.js services, Supabase/PostgreSQL backends, and LLM-powered features via the Claude API. I've built MCP servers that bridge AI agents to mainframe subsystems — bringing modern AI tooling into some of the most regulated infrastructure on the planet. By day at IBM, I keep mission-critical IMS environments fast, observable, and resilient.
+I design and ship full-stack products: React Native/TypeScript frontends, Python and Node.js services, Supabase/PostgreSQL backends, and LLM-powered features via the Claude API. I've built MCP servers that bridge AI agents to mainframe subsystems — bringing modern AI tooling into some of the most regulated infrastructure on the planet. At IBM I keep mission-critical IMS environments fast, observable, and resilient, and before that I worked on **watsonx Code Assistant for Z**, IBM's generative-AI product for mainframe modernization.
 
 📍 Bangalore, India · 🏢 IBM · Full-Stack + AI + Mainframe
 
@@ -14,17 +14,18 @@ I design and ship full-stack products: React Native/TypeScript frontends, Python
 
 ### `$ cat experience.log`
 
-- **IBM** — IMS System Programmer · Modernization & Performance *(2024–present)*
-- **Rocket Software** — Mainframe Infrastructure Engineer *(2022–2024)*
-- **DXC Technology** — Mainframe Developer, Insurance Domain *(2017–2022)*
+- **IBM** — IMS System Programmer, Modernization & Performance *(Feb 2025–present)* · previously AI/ML Engineer, watsonx Code Assistant for Z *(Jul 2024–Jan 2025)*
+- **Rocket Software** — Mainframe Infrastructure Engineer *(Apr 2022–Jun 2024)*
+- **DXC Technology** — Mainframe Developer, Insurance Domain *(Nov 2017–Apr 2022)*
 
 ### `$ ls ~/skills`
 
-**Languages** · Python · TypeScript · JavaScript · SQL · Java · COBOL · REXX · Assembler
-**AI & MCP** · MCP server development · Claude API · LLM agents · Prompt engineering
-**Full-Stack** · React · React Native (Expo) · Node.js · Supabase (PostgreSQL) · REST APIs
-**Cloud & DevOps** · Vercel · Turborepo · Cloudflare · CI/CD · Ansible
-**Enterprise** · z/OS · IMS DB/DC · OpenTelemetry · Performance Engineering · SMP/E
+- **Languages** · Python · TypeScript · JavaScript · SQL · Java
+- **AI & MCP** · MCP server development · Claude API · LLM agents · Prompt engineering
+- **Full-Stack** · React · React Native (Expo) · Node.js · Supabase (PostgreSQL) · REST APIs
+- **Cloud & DevOps** · Vercel · Turborepo · Cloudflare · CI/CD · Ansible
+- **Mainframe** · z/OS · IMS DB/DC · CICS · COBOL · DB2 · JCL · REXX · Assembler · SMP/E
+- **Enterprise** · OpenTelemetry · Performance Engineering · Observability · Problem Determination
 
 ### `$ ./projects`
 
