@@ -204,6 +204,7 @@ b, strong { color: var(--ink); font-weight: 600; }
 .card .tags { margin-top: auto; padding-top: 16px; }
 .card.note { background: transparent; border-style: dashed; justify-content: center; }
 .card.note:hover { transform: none; }
+@media (min-width: 761px) { .card.note { grid-column: span 2; flex-direction: row; align-items: center; gap: 20px; } .card.note img { margin: 0; flex: none; } }
 .card.note img { width: 72px; height: 72px; border-radius: 50%; background: var(--accent-soft); margin-bottom: 12px; }
 
 /* Skills */
@@ -470,16 +471,8 @@ footer.site a { color: var(--accent); text-decoration: none; }
     </a>
 
     <!-- Project links: add a "code" or "case study" link inside a card once
-         there's a public repo, TestFlight/App Store link or screenshots page.
-         The MCP link must point to a clean-room public rebuild, never IBM code. -->
+         there's a public repo, TestFlight/App Store link or screenshots page. -->
     <div class="grid">
-      <article class="card">
-        <div class="ico">⌁</div>
-        <span class="mono">ai × mainframe</span>
-        <h3>z/OS &amp; IMS Logs MCP Servers</h3>
-        <p>MCP servers that expose mainframe operations and log analysis to LLM agents, bringing modern AI tooling to enterprise infrastructure.</p>
-        <ul class="tags"><li>Python</li><li>MCP SDK</li><li>LLM agents</li><li>z/OS</li></ul>
-      </article>
       <article class="card">
         <div class="ico">Q</div>
         <span class="mono">pqc migration agent</span>

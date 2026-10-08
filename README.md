@@ -32,7 +32,6 @@ I design and ship full-stack products: React Native/TypeScript frontends, Python
 > ⚠️ Most of my work lives in **private repos** — production apps and internal tooling I can't open-source. Happy to walk through any of it in a conversation.
 
 - **[Layman Terms](https://laymanterms.dev)** — a plain-English dictionary of tech words, each with an everyday comparison and a hand-drawn illustration *(Astro, Cloudflare Workers)*
-- **z/OS MCP Server & IMS Logs MCP Server** — MCP servers exposing mainframe operations and log analysis to LLM agents *(Python, MCP SDK)*
 - **QuantumShield** — AI agent for post-quantum cryptography migration planning *(CBOMkit, NIST PQC, React)*
 - **Artha** — wealth intelligence app *(React Native, Node.js, AI, Fintech)*
 - **Mosaic** — comprehensive personal finance platform *(React Native, TypeScript, Supabase)*
