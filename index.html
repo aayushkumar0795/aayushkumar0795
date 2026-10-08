@@ -113,15 +113,20 @@ img { max-width: 100%; height: auto; display: block; }
 .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
-.portrait { position: relative; justify-self: center; width: min(100%, 400px); aspect-ratio: 1; }
-.portrait .disc { position: absolute; inset: 0; border-radius: 50%; overflow: hidden; background: radial-gradient(circle at 50% 35%, color-mix(in srgb, var(--accent) 22%, var(--surface)) 0%, var(--accent-soft) 60%); border: 1px solid var(--line); }
-.portrait .disc img { position: absolute; left: 50%; bottom: -2%; width: 96%; height: auto; transform: translateX(-50%); }
+/* The illustration sits over a soft disc and breaks out of it; the tablet
+   and cabinet reach past the circle, and the cropped bottom fades away. */
+.portrait { position: relative; justify-self: center; width: min(100%, 470px); aspect-ratio: 1; }
+.portrait .orb { position: absolute; left: 11%; top: 2%; width: 78%; aspect-ratio: 1; }
+.portrait .disc { position: absolute; inset: 0; border-radius: 50%; background: radial-gradient(circle at 50% 35%, color-mix(in srgb, var(--accent) 22%, var(--surface)) 0%, var(--accent-soft) 60%); border: 1px solid var(--line); }
 .portrait .ring { position: absolute; inset: -14px; border-radius: 50%; border: 1px dashed color-mix(in srgb, var(--accent) 45%, transparent); }
+.portrait > img { position: absolute; inset: 0; width: 100%; height: 100%;
+  -webkit-mask-image: linear-gradient(180deg, #000 82%, transparent 99%); mask-image: linear-gradient(180deg, #000 82%, transparent 99%); }
 .chip { position: absolute; display: flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; box-shadow: var(--shadow); font-size: 14px; color: var(--ink); font-weight: 600; white-space: nowrap; }
 .chip small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; color: var(--muted); }
 .chip b { display: inline-flex; width: 30px; height: 30px; border-radius: 8px; align-items: center; justify-content: center; background: var(--accent-soft); color: var(--accent); font-family: var(--mono); font-size: 12px; }
-.chip.c1 { left: -18%; top: 18%; }
-.chip.c2 { right: -12%; bottom: 14%; }
+.chip { z-index: 2; }
+.chip.c1 { right: -20%; top: 9%; }
+.chip.c2 { left: -26%; top: 26%; }
 
 /* ---------- Numbers ---------- */
 .stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); }
@@ -233,8 +238,8 @@ footer.site a { color: var(--accent); text-decoration: none; }
   .skills { grid-template-columns: repeat(2, 1fr); }
   .grid { grid-template-columns: repeat(2, 1fr); }
   .about { grid-template-columns: 1fr; gap: 28px; }
-  .chip.c1 { left: -8%; }
-  .chip.c2 { right: -4%; }
+  .chip.c1 { right: -8%; }
+  .chip.c2 { left: -12%; }
 }
 /* ---------- Phone ---------- */
 @media (max-width: 760px) {
@@ -246,11 +251,13 @@ footer.site a { color: var(--accent); text-decoration: none; }
   .menu-btn { display: inline-flex; }
   .hero .wrap { grid-template-columns: 1fr; padding-top: 36px; padding-bottom: 64px; gap: 48px; }
   .hero p.intro { font-size: 16.5px; }
-  .portrait { width: min(78%, 300px); }
+  .portrait { width: min(92%, 340px); }
   .chip { font-size: 12.5px; padding: 6px 10px; }
   .chip b { width: 24px; height: 24px; font-size: 11px; }
-  .chip.c1 { left: -14%; top: 8%; }
-  .chip.c2 { right: -16%; bottom: 10%; }
+  /* Phones: the badges sit in a row under the picture instead of over it */
+  .portrait { aspect-ratio: auto; padding-top: 100%; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+  .portrait > img { height: auto; bottom: auto; }
+  .chip { position: static; }
   .stats ul { grid-template-columns: repeat(2, 1fr); }
   .stats li { padding: 18px 16px; }
   .stats li:nth-child(3) { border-left: 0; padding-left: 0; }
@@ -278,7 +285,7 @@ footer.site a { color: var(--accent); text-decoration: none; }
 
 <header class="nav">
   <div class="wrap">
-    <a class="brand" href="#top"><img src="assets/stickers/happy-sm.webp" alt="" width="34" height="34">Aayush Kumar</a>
+    <a class="brand" href="#top"><img src="assets/avatar-sm.webp" alt="" width="34" height="34">Aayush Kumar</a>
     <div class="tools">
       <nav class="links" id="links" aria-label="Sections">
         <a href="#about">About</a>
@@ -314,8 +321,8 @@ footer.site a { color: var(--accent); text-decoration: none; }
       </div>
     </div>
     <div class="portrait">
-      <div class="ring" aria-hidden="true"></div>
-      <div class="disc"><img src="assets/stickers/wave-lg.webp" width="560" height="560" alt="An illustration of Aayush, with glasses, a beard and a black T-shirt, waving." fetchpriority="high"></div>
+      <div class="orb" aria-hidden="true"><div class="ring"></div><div class="disc"></div></div>
+      <img src="assets/aayush-bridge.webp" width="840" height="840" alt="An illustration of Aayush holding a tablet showing a glowing AI network, connected by a line of light to a mainframe cabinet he leans on." fetchpriority="high">
       <div class="chip c1"><b>z/</b><span>Legacy Modernization<small>mainframe · IMS · z/OS</small></span></div>
       <div class="chip c2"><b>AI</b><span>AI Integrations<small>LLM agents · Claude API</small></span></div>
     </div>
