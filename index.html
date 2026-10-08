@@ -31,8 +31,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* Clean engineering look: cool neutrals, one cobalt accent, a faint blueprint
-   grid, Inter Tight for text and JetBrains Mono for small labels. */
+/* Clean engineering look: cool neutrals, one cobalt accent, Inter Tight for
+   text and JetBrains Mono for small labels. */
 :root {
   --bg: #f6f7f9;
   --surface: #ffffff;
@@ -44,7 +44,7 @@
   --accent: #2f5bff;
   --accent-ink: #ffffff;
   --accent-soft: #e6ecff;
-  --grid: rgba(47, 91, 255, .07);
+ 
   --shadow: 0 1px 2px rgba(14, 20, 32, .05), 0 8px 24px -12px rgba(14, 20, 32, .14);
   --sans: "Inter Tight", system-ui, -apple-system, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
@@ -52,13 +52,13 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0b0f17; --surface: #121826; --sunk: #0f1420; --ink: #eef2f8; --body: #b5bfce; --muted: #7d889b;
-    --line: #1f2737; --accent: #7b9bff; --accent-ink: #0b0f17; --accent-soft: #18224a; --grid: rgba(123, 155, 255, .06);
+    --line: #1f2737; --accent: #7b9bff; --accent-ink: #0b0f17; --accent-soft: #18224a;
     --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 30px -14px rgba(0, 0, 0, .6);
   }
 }
 :root[data-theme="dark"] {
   --bg: #0b0f17; --surface: #121826; --sunk: #0f1420; --ink: #eef2f8; --body: #b5bfce; --muted: #7d889b;
-  --line: #1f2737; --accent: #7b9bff; --accent-ink: #0b0f17; --accent-soft: #18224a; --grid: rgba(123, 155, 255, .06);
+  --line: #1f2737; --accent: #7b9bff; --accent-ink: #0b0f17; --accent-soft: #18224a;
   --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 10px 30px -14px rgba(0, 0, 0, .6);
 }
 :root[data-theme="light"] { color-scheme: light; }
@@ -102,17 +102,8 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* ---------- Hero ---------- */
 .hero { position: relative; overflow: hidden; }
-.hero::before { /* blueprint grid, fading out at the edges */
-  content: ""; position: absolute; inset: -1px 0 0; pointer-events: none;
-  background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-  background-size: 40px 40px;
-  -webkit-mask-image: radial-gradient(ellipse 80% 75% at 60% 40%, #000 30%, transparent 75%);
-  mask-image: radial-gradient(ellipse 80% 75% at 60% 40%, #000 30%, transparent 75%);
-}
 .hero .wrap { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center; padding-top: 72px; padding-bottom: 88px; }
-.status { display: inline-flex; align-items: center; gap: 8px; font-family: var(--mono); font-size: 12.5px; color: var(--body); background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 5px 12px 5px 10px; box-shadow: var(--shadow); }
-.status i { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 3px rgba(34, 197, 94, .2); }
-.hero h1 { margin: 22px 0 0; color: var(--ink); font-weight: 800; font-size: clamp(44px, 6.4vw, 78px); line-height: .98; letter-spacing: -.045em; }
+.hero h1 { margin: 0; color: var(--ink); font-weight: 800; font-size: clamp(44px, 6.4vw, 78px); line-height: .98; letter-spacing: -.045em; }
 .hero h1 .soft { color: var(--muted); font-weight: 600; }
 .hero h1 .acc { color: var(--accent); }
 .hero p.intro { font-size: 19px; max-width: 540px; margin: 24px 0 0; }
@@ -129,9 +120,8 @@ img { max-width: 100%; height: auto; display: block; }
 .chip { position: absolute; display: flex; align-items: center; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 8px 12px; box-shadow: var(--shadow); font-size: 14px; color: var(--ink); font-weight: 600; white-space: nowrap; }
 .chip small { display: block; font-family: var(--mono); font-size: 11px; font-weight: 400; color: var(--muted); }
 .chip b { display: inline-flex; width: 30px; height: 30px; border-radius: 8px; align-items: center; justify-content: center; background: var(--accent-soft); color: var(--accent); font-family: var(--mono); font-size: 12px; }
-.chip.c1 { left: -18%; top: 16%; }
-.chip.c2 { right: -12%; top: 54%; }
-.chip.c3 { left: -6%; bottom: 4%; }
+.chip.c1 { left: -18%; top: 18%; }
+.chip.c2 { right: -12%; bottom: 14%; }
 
 /* ---------- Numbers ---------- */
 .stats { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface); }
@@ -224,9 +214,6 @@ b, strong { color: var(--ink); font-weight: 600; }
 /* Contact */
 .contact { margin-top: 104px; }
 .contact .box { position: relative; overflow: hidden; border-radius: 24px; background: var(--ink); color: var(--bg); padding: 56px; display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; }
-.contact .box::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .5;
-  background-image: linear-gradient(rgba(123, 155, 255, .12) 1px, transparent 1px), linear-gradient(90deg, rgba(123, 155, 255, .12) 1px, transparent 1px); background-size: 40px 40px;
-  -webkit-mask-image: linear-gradient(90deg, transparent 20%, #000); mask-image: linear-gradient(90deg, transparent 20%, #000); }
 .contact h2 { margin: 0; font-size: clamp(32px, 4.4vw, 52px); font-weight: 800; letter-spacing: -.04em; line-height: 1.02; color: var(--bg); position: relative; }
 .contact p { margin: 14px 0 0; max-width: 520px; font-size: 18px; opacity: .78; position: relative; }
 .contact .btns { position: relative; }
@@ -263,8 +250,7 @@ footer.site a { color: var(--accent); text-decoration: none; }
   .chip { font-size: 12.5px; padding: 6px 10px; }
   .chip b { width: 24px; height: 24px; font-size: 11px; }
   .chip.c1 { left: -14%; top: 8%; }
-  .chip.c2 { right: -16%; top: 58%; }
-  .chip.c3 { display: none; }
+  .chip.c2 { right: -16%; bottom: 10%; }
   .stats ul { grid-template-columns: repeat(2, 1fr); }
   .stats li { padding: 18px 16px; }
   .stats li:nth-child(3) { border-left: 0; padding-left: 0; }
@@ -317,7 +303,6 @@ footer.site a { color: var(--accent); text-decoration: none; }
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="status"><i></i>Open to full-stack &amp; AI roles</span>
       <h1>Aayush Kumar.<br><span class="soft">I build</span> <span class="acc">AI products</span> <span class="soft">and keep mainframes fast.</span></h1>
       <p class="intro">Full-stack and AI engineer in Bangalore. React Native frontends, Python and Node.js backends, and MCP servers that connect LLM agents to real systems, backed by 9+ years on mission-critical infrastructure in banking and insurance.</p>
       <div class="btns">
@@ -329,9 +314,8 @@ footer.site a { color: var(--accent); text-decoration: none; }
     <div class="portrait">
       <div class="ring" aria-hidden="true"></div>
       <div class="disc"><img src="assets/stickers/wave-lg.webp" width="560" height="560" alt="An illustration of Aayush, with glasses, a beard and a black T-shirt, waving." fetchpriority="high"></div>
-      <div class="chip c1"><b>IBM</b><span>IMS System Programmer<small>Feb 2025 – now</small></span></div>
-      <div class="chip c2"><b>MCP</b><span>2 servers shipped<small>z/OS · IMS Logs</small></span></div>
-      <div class="chip c3"><b>9+</b><span>Years engineering<small>banking · insurance</small></span></div>
+      <div class="chip c1"><b>z/</b><span>Legacy Modernization<small>mainframe · IMS · z/OS</small></span></div>
+      <div class="chip c2"><b>AI</b><span>AI Integrations<small>LLM agents · Claude API</small></span></div>
     </div>
   </div>
 </section>
