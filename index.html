@@ -103,10 +103,10 @@ img { max-width: 100%; height: auto; display: block; }
 /* ---------- Hero ---------- */
 .hero { position: relative; overflow: hidden; }
 .hero .wrap { position: relative; display: grid; grid-template-columns: 1.15fr .85fr; gap: 48px; align-items: center; padding-top: 72px; padding-bottom: 88px; }
-.hero h1 { margin: 0; color: var(--ink); font-weight: 800; font-size: clamp(44px, 6.4vw, 78px); line-height: .98; letter-spacing: -.045em; }
-.hero h1 .soft { color: var(--muted); font-weight: 600; }
-.hero h1 .acc { color: var(--accent); }
-.hero p.intro { font-size: 19px; max-width: 540px; margin: 24px 0 0; }
+.hero h1 { margin: 0; color: var(--ink); font-weight: 800; font-size: clamp(42px, 5vw, 64px); line-height: 1.02; letter-spacing: -.04em; }
+.hero .tagline { margin: 18px 0 0; max-width: 520px; color: var(--muted); font-size: clamp(21px, 2.1vw, 26px); font-weight: 500; line-height: 1.35; letter-spacing: -.015em; }
+.hero .tagline span { color: var(--ink); }
+.hero p.intro { font-size: 17px; max-width: 520px; margin: 20px 0 0; }
 .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
 .btn { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; font-weight: 600; font-size: 15.5px; padding: 11px 18px; border-radius: 10px; border: 1px solid var(--line); color: var(--ink); background: var(--surface); transition: transform .15s ease, box-shadow .15s ease, background .15s; }
 .btn:hover { transform: translateY(-1px); box-shadow: var(--shadow); }
@@ -245,7 +245,7 @@ footer.site a { color: var(--accent); text-decoration: none; }
   .links a.cta { margin: 6px 0 0; text-align: center; }
   .menu-btn { display: inline-flex; }
   .hero .wrap { grid-template-columns: 1fr; padding-top: 36px; padding-bottom: 64px; gap: 48px; }
-  .hero p.intro { font-size: 17px; }
+  .hero p.intro { font-size: 16.5px; }
   .portrait { width: min(78%, 300px); }
   .chip { font-size: 12.5px; padding: 6px 10px; }
   .chip b { width: 24px; height: 24px; font-size: 11px; }
@@ -303,7 +303,9 @@ footer.site a { color: var(--accent); text-decoration: none; }
 <section class="hero">
   <div class="wrap">
     <div>
-      <h1>Aayush Kumar.<br><span class="soft">I build</span> <span class="acc">AI products</span> <span class="soft">and keep mainframes fast.</span></h1>
+      <p class="kicker">full-stack &amp; ai engineer</p>
+      <h1>Aayush Kumar</h1>
+      <p class="tagline"><span>I build AI products</span> and keep mainframes fast.</p>
       <p class="intro">Full-stack and AI engineer in Bangalore. React Native frontends, Python and Node.js backends, and MCP servers that connect LLM agents to real systems, backed by 9+ years on mission-critical infrastructure in banking and insurance.</p>
       <div class="btns">
         <a class="btn primary" href="#projects">See my work <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
