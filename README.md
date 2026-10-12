@@ -13,7 +13,6 @@
   <a href="https://aayushkumar0795.github.io/aayushkumar0795/"><img src="https://img.shields.io/badge/Portfolio-2F5BFF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
   <a href="https://www.linkedin.com/in/aayushkumar0795"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:aayushkumar0795@icloud.com"><img src="https://img.shields.io/badge/Email-0E1420?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email"></a>
-  <a href="https://aayushkumar0795.github.io/aayushkumar0795/resume.pdf"><img src="https://img.shields.io/badge/Resume-6A7384?style=for-the-badge&logo=readdotcv&logoColor=white" alt="Resume"></a>
 </p>
 
 ---
