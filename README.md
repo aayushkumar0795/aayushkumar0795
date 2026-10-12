@@ -1,47 +1,86 @@
-### `$ whoami`
+<p align="center">
+  <img src="assets/aayush-bridge.webp" width="300" alt="Illustration of Aayush holding a tablet with a glowing AI network, connected by a line of light to a mainframe cabinet">
+</p>
 
-# Aayush Kumar
+<h1 align="center">Aayush Kumar</h1>
 
-**Software Engineer — Full-Stack, AI & Enterprise Systems** — building AI-powered applications end to end, backed by 9+ years of enterprise systems engineering.
+<p align="center">
+  <b>I build AI products and keep mainframes fast.</b><br>
+  Full-stack &amp; AI engineer · 9+ years on mission-critical systems · Bangalore, India
+</p>
 
-I design and ship full-stack products: React Native/TypeScript frontends, Python and Node.js services, Supabase/PostgreSQL backends, and LLM-powered features via the Claude API. I've built MCP servers that bridge AI agents to mainframe subsystems — bringing modern AI tooling into some of the most regulated infrastructure on the planet. At IBM I keep mission-critical IMS environments fast, observable, and resilient, and before that I worked on **watsonx Code Assistant for Z**, IBM's generative-AI product for mainframe modernization.
-
-📍 Bangalore, India · 🏢 IBM · Full-Stack + AI + Mainframe
-
-🔗 **[View my portfolio →](https://aayushkumar0795.github.io/aayushkumar0795/)**
-
----
-
-### `$ cat experience.log`
-
-- **IBM** — IMS System Programmer, Modernization & Performance *(Feb 2025–present)* · previously AI/ML Engineer, watsonx Code Assistant for Z *(Jul 2024–Jan 2025)*
-- **Rocket Software** — Mainframe Infrastructure Engineer *(Apr 2022–Jun 2024)*
-- **DXC Technology** — Mainframe Developer, Insurance Domain *(Nov 2017–Apr 2022)*
-
-### `$ ls ~/skills`
-
-- **Languages** · Python · TypeScript · JavaScript · SQL · Java
-- **AI & MCP** · MCP server development · Claude API · LLM agents · Prompt engineering
-- **Full-Stack** · React · React Native (Expo) · Node.js · Supabase (PostgreSQL) · REST APIs
-- **Cloud & DevOps** · Vercel · Turborepo · Cloudflare · CI/CD · Ansible
-- **Mainframe** · z/OS · IMS DB/DC · CICS · COBOL · DB2 · JCL · REXX · Assembler · SMP/E
-- **Enterprise** · OpenTelemetry · Performance Engineering · Observability · Problem Determination
-
-### `$ ./projects`
-
-> ⚠️ Most of my work lives in **private repos** — production apps and internal tooling I can't open-source. Happy to walk through any of it in a conversation.
-
-- **[Layman Terms](https://laymanterms.dev)** — a plain-English dictionary of tech words, each with an everyday comparison and a hand-drawn illustration *(Astro, Cloudflare Workers)*
-- **QuantumShield** — AI agent for post-quantum cryptography migration planning *(CBOMkit, NIST PQC, React)*
-- **Artha** — wealth intelligence app *(React Native, Node.js, AI, Fintech)*
-- **Mosaic** — comprehensive personal finance platform *(React Native, TypeScript, Supabase)*
-- **Settl** — money-split app wrapped as native iOS *(React, Supabase, Capacitor)*
+<p align="center">
+  <a href="https://aayushkumar0795.github.io/aayushkumar0795/"><img src="https://img.shields.io/badge/Portfolio-2F5BFF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio"></a>
+  <a href="https://www.linkedin.com/in/aayushkumar0795"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:aayushkumar0795@icloud.com"><img src="https://img.shields.io/badge/Email-0E1420?style=for-the-badge&logo=maildotru&logoColor=white" alt="Email"></a>
+  <a href="https://aayushkumar0795.github.io/aayushkumar0795/resume.pdf"><img src="https://img.shields.io/badge/Resume-6A7384?style=for-the-badge&logo=readdotcv&logoColor=white" alt="Resume"></a>
+</p>
 
 ---
 
-### `$ ./say-hello`
+## What I do
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/aayushkumar0795)
-[![Portfolio](https://img.shields.io/badge/Portfolio-1a1a1a?style=flat&logo=github&logoColor=white)](https://aayushkumar0795.github.io/aayushkumar0795/)
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>Legacy Modernization</h3>
+      At IBM I keep mission-critical IMS environments fast, observable and resilient for enterprise customers, from OpenTelemetry validation to resolving high-severity performance problems for one of Spain's largest banks.
+      <br><br><sub>z/OS · IMS · CICS · DB2 · OpenTelemetry · performance engineering</sub>
+    </td>
+    <td width="50%" valign="top">
+      <h3>AI Integrations</h3>
+      I ship AI-powered products end to end: React Native frontends, Python and Node.js services on Supabase, and LLM features on the Claude API, plus agents that connect AI to real systems.
+      <br><br><sub>LLM agents · MCP · Claude API · React Native · Node.js · Python</sub>
+    </td>
+  </tr>
+</table>
 
-*Open to full-stack and AI engineering work, MCP/agent tooling, and good conversations about bridging legacy systems with modern AI.*
+## Featured: [Layman Terms](https://laymanterms.dev)
+
+<a href="https://laymanterms.dev"><img src="assets/laymanterms-home.webp" alt="The Layman Terms home page" width="100%"></a>
+
+A plain-English dictionary of tech words. Every term gets an everyday comparison and its own hand-drawn illustration, so anyone can follow it. One new term every week. <sub>Astro · Cloudflare Workers · D1 · Turnstile</sub>
+
+## More projects
+
+| Project | What it is | Built with |
+|---|---|---|
+| **QuantumShield** | AI agent for post-quantum cryptography migration planning | AI agent · CBOMkit · NIST PQC · React |
+| **Artha** | Wealth intelligence app with an AI assistant and live market data | React Native · Node.js · AI |
+| **Mosaic** | Personal finance platform: budgets, accounts and insights in one place | React Native · TypeScript · Supabase |
+| **Settl** | Split shared expenses with friends, wrapped as a native iOS app | React · Supabase · Capacitor |
+
+<sub>Most of these live in private repos. Happy to walk you through any of them.</sub>
+
+## Experience
+
+| When | Role | Company |
+|---|---|---|
+| Feb 2025 – now | IMS System Programmer, Modernization & Performance | **IBM** |
+| Jul 2024 – Jan 2025 | AI/ML Engineer, watsonx Code Assistant for Z | **IBM** |
+| Apr 2022 – Jun 2024 | Mainframe Infrastructure Engineer | **Rocket Software** |
+| Nov 2017 – Apr 2022 | Mainframe Developer, Insurance Domain | **DXC Technology** |
+
+## Toolkit
+
+**Languages** &nbsp; Python · TypeScript · JavaScript · SQL · Java · COBOL · REXX · Assembler<br>
+**AI** &nbsp; LLM agents · MCP · Claude API · Prompt engineering · Evaluations<br>
+**Full-stack** &nbsp; React Native · React · Expo · Astro · Node.js · Express · Supabase · PostgreSQL<br>
+**Cloud & DevOps** &nbsp; Cloudflare · Vercel · Turborepo · AWS S3 · Ansible · CI/CD<br>
+**Mainframe** &nbsp; IMS DB/DC · z/OS · CICS · DB2 · JCL · SMP/E · OpenTelemetry · IBM RMF
+
+<details>
+<summary><b>Certifications</b> (8)</summary>
+<br>
+
+IMS Fundamentals · IMS Diagnostics · z/OS Mainframe Practitioner · Assembler Programming · IBM Z Digital Integration Hub · Ansible Automation · SMP/E Foundation 2.5 · LOMA 281: Insurance & Annuities
+
+</details>
+
+---
+
+<p align="center">
+  <img src="assets/stickers/thumbs-up-lg.webp" width="90" alt=""><br>
+  <b>Let's build something.</b><br>
+  <sub>Open to full-stack and AI engineering work, agent tooling, and good conversations about bridging legacy systems with modern AI.</sub>
+</p>
