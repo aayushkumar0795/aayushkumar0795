@@ -34,11 +34,24 @@
   </tr>
 </table>
 
-## Featured: [Layman Terms](https://laymanterms.dev)
+## Live projects
 
-<a href="https://laymanterms.dev"><img src="assets/laymanterms-home.webp" alt="The Layman Terms home page" width="100%"></a>
-
-A plain-English dictionary of tech words. Every term gets an everyday comparison and its own hand-drawn illustration, so anyone can follow it. One new term every week. <sub>Astro · Cloudflare Workers · D1 · Turnstile</sub>
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://devcmds.dev"><img src="assets/devcmds-home.webp" alt="The devcmds home page" width="100%"></a>
+      <h3><a href="https://devcmds.dev">devcmds</a> <sub>latest</sub></h3>
+      The exact command for macOS, Linux and Windows, ready to copy and paste. One task per page, with fill-in fields, a check that it worked and a way to undo it.
+      <br><br><sub>Astro · Cloudflare Workers</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://laymanterms.dev"><img src="assets/laymanterms-home.webp" alt="The Layman Terms home page" width="100%"></a>
+      <h3><a href="https://laymanterms.dev">Layman Terms</a></h3>
+      A plain-English dictionary of tech words. Every term gets an everyday comparison and its own hand-drawn illustration, so anyone can follow it.
+      <br><br><sub>Astro · Cloudflare Workers · D1 · Turnstile</sub>
+    </td>
+  </tr>
+</table>
 
 ## More projects
 

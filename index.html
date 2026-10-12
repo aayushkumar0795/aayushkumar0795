@@ -187,6 +187,11 @@ b, strong { color: var(--ink); font-weight: 600; }
 .feature .em { margin: 0 0 14px; font-size: 18px; color: var(--ink); font-weight: 500; }
 .feature p { margin: 0 0 16px; }
 .feature .go { color: var(--accent); font-weight: 600; font-size: 15.5px; }
+.feature + .feature { margin-top: 16px; }
+/* Alternate sides so two featured sites in a row don't look repeated */
+.feature.flip { grid-template-columns: 1fr 1.2fr; }
+.feature.flip .shot { order: 2; padding: 18px 18px 0 0; }
+.feature.flip .shot .frame { border-radius: 0 10px 0 0; border-right: 1px solid var(--line); border-left: 0; }
 .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 16px 0 0; padding: 0; list-style: none; }
 .tags li { font-family: var(--mono); font-size: 11.5px; color: var(--body); background: var(--sunk); border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; }
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px; }
@@ -268,7 +273,9 @@ footer.site a { color: var(--accent); text-decoration: none; }
   .job .when { padding: 0 0 8px; }
   .job .body { padding-left: 0; position: static; }
   .job .body::before { left: 0; top: 4px; }
-  .feature { grid-template-columns: 1fr; }
+  .feature, .feature.flip { grid-template-columns: 1fr; }
+  .feature.flip .shot { order: 0; padding: 18px 0 0 18px; }
+  .feature.flip .shot .frame { border-radius: 10px 0 0 0; border-left: 1px solid var(--line); border-right: 0; }
   .feature .txt { padding: 24px; }
   .feature h3 { font-size: 28px; }
   .grid, .skills, .ticks { grid-template-columns: 1fr; }
@@ -346,7 +353,7 @@ footer.site a { color: var(--accent); text-decoration: none; }
       <h2 class="sec" style="margin-bottom: 24px">Modern AI, meet legacy systems.</h2>
       <p class="lead">I ship AI-powered products end to end, and I spend my days making some of the most regulated infrastructure on the planet a little smarter.</p>
       <p>I build React Native and TypeScript frontends, Python and Node.js services on <b>Supabase/PostgreSQL</b>, and LLM features on the <b>Claude API</b>. I've designed MCP servers that let AI agents work with mainframe subsystems, and built <b>QuantumShield</b>, an AI agent for post-quantum cryptography migration.</p>
-      <p>At IBM I keep mission-critical IMS environments fast, observable and resilient for enterprise customers, including resolving high-severity performance problems for one of Spain's largest banks. On the side I build products people actually use: <b>Layman Terms</b>, <b>Artha</b>, <b>Mosaic</b> and <b>Settl</b>.</p>
+      <p>At IBM I keep mission-critical IMS environments fast, observable and resilient for enterprise customers, including resolving high-severity performance problems for one of Spain's largest banks. On the side I build products people actually use: <b>devcmds</b>, <b>Layman Terms</b>, <b>Artha</b>, <b>Mosaic</b> and <b>Settl</b>.</p>
     </div>
     <aside>
       <div class="panel">
@@ -443,10 +450,27 @@ footer.site a { color: var(--accent); text-decoration: none; }
   <div class="wrap">
     <div class="head">
       <div><p class="kicker">projects</p><h2 class="sec">Things I've built</h2></div>
-      <p>From mainframe tooling for AI agents to consumer apps. Most live in private repos; ask and I'll show you around.</p>
+      <p>Two live sites for developers and curious people, plus apps and agents. Most of the rest live in private repos; ask and I'll show you around.</p>
     </div>
 
-    <a class="feature" href="https://laymanterms.dev">
+    <a class="feature" href="https://devcmds.dev">
+      <div class="shot">
+        <div class="frame">
+          <div class="bar"><i></i><i></i><i></i><span>devcmds.dev</span></div>
+          <img src="assets/devcmds-home.webp" width="1400" height="788" loading="lazy" alt="The devcmds home page: the headline “The exact command. Copy, paste, done.” beside a terminal window and an illustration of Aayush in a hoodie giving a thumbs up.">
+        </div>
+      </div>
+      <div class="txt">
+        <p class="kicker">latest · live</p>
+        <h3>devcmds</h3>
+        <p class="em">The exact command. Copy, paste, done.</p>
+        <p>Step-by-step commands for macOS, Linux and Windows, ready to copy and paste. Each page is one task, like installing Docker or fixing a merge conflict, with fill-in fields that update the commands as you type, a check that it worked and a way to undo it. 67 tasks so far.</p>
+        <span class="go">Visit devcmds.dev →</span>
+        <ul class="tags"><li>Astro</li><li>Cloudflare Workers</li><li>Static site</li></ul>
+      </div>
+    </a>
+
+    <a class="feature flip" href="https://laymanterms.dev">
       <div class="shot">
         <div class="frame">
           <div class="bar"><i></i><i></i><i></i><span>laymanterms.dev</span></div>
@@ -454,7 +478,7 @@ footer.site a { color: var(--accent); text-decoration: none; }
         </div>
       </div>
       <div class="txt">
-        <p class="kicker">latest · live</p>
+        <p class="kicker">live · sister site</p>
         <h3>Layman Terms</h3>
         <p class="em">Tech words, explained like a friend would.</p>
         <p>A plain-English dictionary of tech words. Every term gets an everyday comparison and its own hand-drawn illustration, so anyone can follow it. One new term every week.</p>
