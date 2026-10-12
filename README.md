@@ -1,12 +1,12 @@
-<p align="center">
-  <img src="assets/aayush-bridge.webp" width="300" alt="Illustration of Aayush holding a tablet with a glowing AI network, connected by a line of light to a mainframe cabinet">
-</p>
+<a href="https://aayushkumar0795.github.io/aayushkumar0795/">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/readme-banner-dark.webp">
+    <img src="assets/readme-banner-light.webp" width="100%" alt="Aayush Kumar, full-stack and AI engineer. I build AI products and keep mainframes fast. Illustration of Aayush between a mainframe cabinet and a tablet showing an AI network, with the labels Legacy Modernization and AI Integrations.">
+  </picture>
+</a>
 
-<h1 align="center">Aayush Kumar</h1>
-
 <p align="center">
-  <b>I build AI products and keep mainframes fast.</b><br>
-  Full-stack &amp; AI engineer · 9+ years on mission-critical systems · Bangalore, India
+  9+ years on mission-critical systems · IBM · Bangalore, India
 </p>
 
 <p align="center">
